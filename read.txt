@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include <iomanip>
+main(){
+	int ano, nasc, idade, dif, difm;
+	float altura, peso, imc;
+	printf ("escreva seu o ano atual:\n");
+		scanf("%d", &ano);
+	printf("escreva seu ano de nascimento: \n");
+		scanf("%d", &nasc);
+		idade=ano-nasc;
+	printf("Sua idade e: %d", idade);
+	printf(" anos\n");
+	dif=(18-idade);
+	difm=(idade-18);
+	if 
+		(idade<18) 
+		printf("Voce e de menor, faltam %d anos para voce ser de maior\n", dif);
+	else
+		printf("Voce ja e de maior, ja fazem %d anos que voce pode ser preso '-', cuidado! \n", difm);
+
+printf("--------------------------------------\n");
+printf("Agora vamos testar seu IMC, vou precisar da sua altura e peso\n");
+printf("Escreva a sua altura (exemplo: 1.70):\n");
+	scanf("%f", &altura);
+printf("Agora, escreva o seu peso\n");
+	scanf("%f", &peso);
+printf("Tudo certo! Calcularemos seu IMC agora...\n");
+	imc=peso/(altura*altura);
+printf("Seu IMC atual e de: %.1f \n", imc);
+printf("---------\n");
+printf("---------\n");
+ if(imc<=16.5 && imc<18.0){ printf("voce esta com o imc baixo, tome cuidado\n");
+  				}
+        if(imc>=18.0 && imc<25.0){ printf("voce esta com o IMC normal, parabens :)\n");
+        			}
+            if(imc>=25.0 && imc<30.0){ printf("você está com sobrepeso, tome cuidado!\n");
+            		}
+                if(imc>=30.0 && imc<35){ printf("voce esta OBESO, tome cuidado!\n");
+              				  }
+        if(imc>= 35) {	printf("Voce esta com obesidade grave, procure um medico especialista\n");
+        			}
+	
+system("pause");						
+}
